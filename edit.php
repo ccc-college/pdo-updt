@@ -70,30 +70,30 @@
                                 echo "    <input type='radio' name='gender' value='1' required checked>男性";
                                 echo "</label>";
                                 echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required>女性";
+                                echo "    <input type='radio' name='gender' value='2' required>女性";
                                 echo "</label>";
                                 echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required>その他";
+                                echo "    <input type='radio' name='gender' value='9' required>その他";
                                 echo "</label>";
                             } elseif( $row[gender] === 2 ){
                                 echo "<label class='radio-inline'>";
                                 echo "    <input type='radio' name='gender' value='1' required>男性";
                                 echo "</label>";
                                 echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required checked>女性";
+                                echo "    <input type='radio' name='gender' value='2' required checked>女性";
                                 echo "</label>";
                                 echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required>その他";
+                                echo "    <input type='radio' name='gender' value='9' required>その他";
                                 echo "</label>";
                             } elseif( $row[gender] === 9 ){
                                 echo "<label class='radio-inline'>";
                                 echo "    <input type='radio' name='gender' value='1' required checked>男性";
                                 echo "</label>";
                                 echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required>女性";
+                                echo "    <input type='radio' name='gender' value='2' required>女性";
                                 echo "</label>";
                                 echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required checked>その他";
+                                echo "    <input type='radio' name='gender' value='9' required checked>その他";
                                 echo "</label>";
                             }
                        ?>
