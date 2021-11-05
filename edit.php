@@ -1,6 +1,6 @@
 <?php
-  require_once("functions.php");
   session_start();
+  require_once("functions.php");
 
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
       if(isset($_POST["edit"])){
