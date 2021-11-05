@@ -28,6 +28,7 @@
                 </div>
 
                 <div class="button-wrapper">
+                    <button type="button" onclick="location.href='index.html'">戻る</button>
                     <button type="submit" class="btn btn--naby btn--shadow">検索する</button>
                 </div>
             </div>
