@@ -44,7 +44,11 @@ try{
     </header>
 </div>
 <hr>
-<p><?php echo $count;?>件見つかりました。</p>
+<p>データ件数：<?php echo $count;?>件</p>
+
+<div class="container">
+<form action="edit.php" method="POST">
+
 <table border=1>
     <tr><th>id</th><th>名前</th><th>メールアドレス</th><th>性別</th><th>選択対象</th></tr>
     <?php foreach($data as $row): ?>
@@ -64,22 +68,21 @@ try{
         ?>
     </td>
     <td>
-        <?php echo "<input type='radio' name='edit' value='".$row['id']."'>更新";?>
+        <?php echo "<input type='radio' name='edit' value='".$row['id']."'>編集";?>
     </td>
     </tr>
     <?php endforeach; ?>
 </table>
 <p style="margin:8px;">
 
-<p>こちらの情報でよろしいですか？</p>
-    <div class="container">
-    <form action="comfirm2.php" method="POST">
+<p>編集するデータを選択してください</p>
+
         <div class="button-wrapper">
             <button type="button" onclick="history.back()">戻る</button>
-	        <button type="submit" class="btn btn--naby btn--shadow">更新する</button>
+	        <button type="submit" class="btn btn--naby btn--shadow">編集する</button>
         </div>
-    </form>
-    </div>
+</form>
+</div>
 
 <hr>
 <div class="container">

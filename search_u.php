@@ -20,7 +20,7 @@
 <p>名前の一致するユーザーを検索し一覧で表示します</p>
 
     <div class="container">
-        <form action="data-list.php" method="POST" class="row">
+        <form action="list_u.php" method="POST" class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="form-group">
                     <label for="name"><span >検索キーワード</span> </label>
