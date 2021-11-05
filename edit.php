@@ -23,7 +23,6 @@
     $stmt->bindValue(':id', $edit, PDO::PARAM_STR);
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    echo $row;
 
   }catch (PDOException $e){
     echo($e->getMessage());
