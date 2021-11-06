@@ -13,6 +13,8 @@
       } else {
           echo "更新するデータを選択してください\n";
       }
+  } else {
+    $edit = $_SESSION["edit"];
   }
 
   $dbh = db_conn();
