@@ -4,7 +4,7 @@ require_once("functions.php");
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if(isset($_POST["name"])){
-        if(! empty($_POST["name"])) }
+        if(! empty($_POST["name"])) {
            $name = htmlspecialchars($_POST["name"], ENT_QUOTES, 'UTF-8');
            $_SESSION["name"] = $_POST["name"];
         }
