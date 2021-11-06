@@ -28,7 +28,7 @@
     </header>
 </div>
 <hr>
-<p>あなたの名前は <?php echo $name;?> さんです。</p>
+<p>名前は <?php echo $name;?> さんです。</p>
 <p>メールアドレスは <?php echo $email;?> です。</p>
 
 <p>性別は <?php if( $gender === "1" ){ echo '男性'; }
