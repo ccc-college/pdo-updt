@@ -6,11 +6,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if(isset($_POST["name"])){
         if(! empty($_POST["name"])) {
            $name = htmlspecialchars($_POST["name"], ENT_QUOTES, 'UTF-8');
-           $_SESSION["name"] = $_POST["name"];
+           $_SESSION["condition_name"] = $_POST["name"];
+        } else {
+            $_SESSION["condition_name"] = $_POST["name"];
         }
     }
 } else {
-    $name = $_SESSION["name"];  //from edit.php
+    $name = $_SESSION["condition_name"];  //from edit.php
 }
 
 $dbh = db_conn();
