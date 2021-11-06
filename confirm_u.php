@@ -38,8 +38,8 @@
 <p>こちらの情報でよろしいですか？</p>
 <form action="complete_u.php" method="POST">
 <div class="button-wrapper">
-    <button type="button" onclick="history.back()">戻る</button>
-	<button type="submit" class="btn btn--naby btn--shadow">登録する</button>
+    <button type="button" onclick="location.href='edit.php'">戻る</button>
+    <button type="submit" class="btn btn--naby btn--shadow">登録する</button>
 </div>
 </form>
 <hr>
