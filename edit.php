@@ -39,7 +39,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="container">
     <header>
        <div>
@@ -48,7 +47,6 @@
     </header>
 </div>
 <hr>
-
     <div class="container">
         <form action="confirm_u.php" method="POST" class="row">
             <div class="col-sm-8 col-sm-offset-2">
@@ -63,38 +61,31 @@
                 <div class="form-group">
                     <label><span class="required">性別</span> </label>
                     <div>
-
-                       <?php if( $row[gender] === 1 ){ 
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required checked>男性";
-                                echo "</label>";
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='2' required>女性";
-                                echo "</label>";
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='9' required>その他";
-                                echo "</label>";
-                            } elseif( $row[gender] === 2 ){
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required>男性";
-                                echo "</label>";
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='2' required checked>女性";
-                                echo "</label>";
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='9' required>その他";
-                                echo "</label>";
-                            } elseif( $row[gender] === 9 ){
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='1' required checked>男性";
-                                echo "</label>";
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='2' required>女性";
-                                echo "</label>";
-                                echo "<label class='radio-inline'>";
-                                echo "    <input type='radio' name='gender' value='9' required checked>その他";
-                                echo "</label>";
-                            }
+                    <?php
+                          echo "<label class='radio-inline'>";
+                          echo "    <input type='radio' name='gender' value='1' required";
+                          if( $row[gender] === 1 ) {
+                          	 echo " checked>男性";
+                          } else {
+                          	 echo ">男性";
+                          }
+                          echo "</label>";
+                          echo "<label class='radio-inline'>";
+                          echo "    <input type='radio' name='gender' value='2' required>女性";
+                          if( $row[gender] === 2 ) {
+                          	 echo " checked>女性";
+                          } else {
+                          	 echo ">女性";
+                          }
+                          echo "</label>";
+                          echo "<label class='radio-inline'>";
+                          echo "    <input type='radio' name='gender' value='9' required>その他";
+                          if( $row[gender] === 9 ) {
+                          	 echo " checked>その他";
+                          } else {
+                          	 echo ">その他";
+                          }
+                          echo "</label>";
                        ?>
                     </div>
                 </div>
