@@ -73,7 +73,7 @@
                           }
                           echo "</label>";
                           echo "<label class='radio-inline'>";
-                          echo "    <input type='radio' name='gender' value='2' required>女性";
+                          echo "    <input type='radio' name='gender' value='2' required";
                           if( $row[gender] === 2 ) {
                           	 echo " checked>女性";
                           } else {
@@ -81,7 +81,7 @@
                           }
                           echo "</label>";
                           echo "<label class='radio-inline'>";
-                          echo "    <input type='radio' name='gender' value='9' required>その他";
+                          echo "    <input type='radio' name='gender' value='9' required";
                           if( $row[gender] === 9 ) {
                           	 echo " checked>その他";
                           } else {
