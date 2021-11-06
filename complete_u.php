@@ -48,6 +48,13 @@ try{
 		elseif( $gender === "9" ){ echo 'その他'; }
 ?> </p>
 <p>以上の内容で更新しました。</p>
+<?php  /* セッション変数クリア */
+   unset($_SESSION['condition_name']);
+   unset($_SESSION['edit']);
+   unset($_SESSION['name']);
+   unset($_SESSION['email']);
+   unset($_SESSION['gender']);
+?>
 <form action="index.html" method="POST">
 <div class="button-wrapper">
 	<button type="submit" class="btn btn--naby btn--shadow">TOPに戻る</button>
