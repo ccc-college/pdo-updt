@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>ユーザー検索画面</title>
+    <title>更新対象検索画面</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -10,7 +10,7 @@
     <div class="container">
         <header>
             <div>
-                    <h1>ユーザー検索画面</h1>
+                    <h1>更新対象検索画面</h1>
             </div>
         </header>
     </div>
