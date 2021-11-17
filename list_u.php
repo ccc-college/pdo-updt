@@ -40,7 +40,7 @@ try{
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>検索結果画面</title>
+  <title>検索結果一覧画面</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -48,7 +48,7 @@ try{
 <div class="container">
     <header>
        <div>
-            <h1>ユーザー一覧</h1>
+            <h1>検索結果一覧画面</h1>
        </div>
     </header>
 </div>
