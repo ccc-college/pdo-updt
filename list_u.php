@@ -77,7 +77,7 @@ try{
         ?>
     </td>
     <td>
-        <?php echo "<input type='radio' name='edit' value='".$row['id']."'>編集";?>
+        <input type="radio" name="edit" id="edit" value="<?php echo $row[id];?>" ><label for="edit">編集</label>
     </td>
     </tr>
     <?php endforeach; ?>
